@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "AGenGov Pocket Heritage: reference implementation"
+version: 0.1.0
+date-released: 2026-11-01
+license: MIT
+repository-code: "https://github.com/ManishXGupta/agengov-pocket-heritage"
+authors:
+  - family-names: Gupta
+    given-names: Manish
+    orcid: "https://orcid.org/0009-0001-0847-7087"
+keywords:
+  - agentic AI
+  - cultural heritage
+  - AI governance
+  - heritage digital passport
+preferred-citation:
+  type: conference-paper
+  title: "AGenGov Pocket Heritage: A Governed Multimodal Agentic AI Framework for Trusted Heritage Tourism and Student Learning"
+  authors:
+    - family-names: Gupta
+      given-names: Manish
+      orcid: "https://orcid.org/0009-0001-0847-7087"
+  collection-title: "International Conference on Smart Heritage (ICSH 2026)"
+  year: 2026

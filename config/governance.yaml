@@ -1,0 +1,60 @@
+# AGenGov Pocket Heritage governance configuration.
+#
+# IMPORTANT: every weight and threshold below is an ILLUSTRATIVE design value
+# taken from the paper (Eqs. (1) to (3)). None of them is empirically derived.
+# Each deployment site is expected to calibrate them with its Heritage
+# Stewardship Board (for example with the Analytic Hierarchy Process) and to
+# tune them on Stage 1 (offline) and Stage 2 (shadow-mode) data.
+
+trust_weights:          # Eq. (1): T = 0.30S + 0.25P + 0.20C + 0.15R + 0.10H
+  # Note: the submitted paper listed S = 0.35, which made the weights sum to 1.05.
+  # The revised paper and this file use S = 0.30 so that the weights sum to 1.0.
+  S: 0.30               # approved-source authority
+  P: 0.25               # passport / provenance match
+  C: 0.20               # multimodal identification confidence
+  R: 0.15               # record freshness
+  H: 0.10               # curator approval
+
+risk_weights:           # Eq. (2): Q = 0.30D + 0.25U + 0.20X + 0.15B + 0.10L
+  D: 0.30               # personal-data sensitivity
+  U: 0.25               # cultural or community sensitivity
+  X: 0.20               # restricted-location or security exposure
+  B: 0.15               # bias or contested-history risk
+  L: 0.10               # child or learner impact
+
+thresholds:             # Eq. (3); evaluated in the order refuse -> review -> answer
+  answer_min_trust: 0.80
+  review_min_trust: 0.55
+  answer_max_risk: 0.30
+  refuse_min_risk: 0.60
+
+identification:
+  min_match_confidence: 0.50   # below this the object is treated as unmatched
+
+freshness:
+  window_days: 365             # R = 1.0 inside the window
+  zero_after_days: 1095        # R decays linearly to 0.0 at this age
+
+roles:
+  # Which passport access levels each role may see.
+  tourist:  [public]
+  visitor:  [public]
+  student:  [public, education]
+  teacher:  [public, education]
+  curator:  [public, education, internal, restricted-community]
+
+consent_required_roles: [student]
+
+sensitivity_scores:            # mapping from passport sensitivity labels to U
+  none: 0.0
+  low: 0.2
+  medium: 0.5
+  high: 0.8
+  sacred: 1.0
+
+learner_impact:                # L by role
+  tourist: 0.1
+  visitor: 0.1
+  student: 0.3
+  teacher: 0.1
+  curator: 0.0

@@ -1,0 +1,16 @@
+{
+  "cases": 25,
+  "G1_approved_source_share": 1.0,
+  "G2_sensitive_leak_rate": 0.0,
+  "G3_claim_evidence_share": 1.0,
+  "G4_correct_abstention": 1.0,
+  "G5_escalation_correctness": 1.0,
+  "G6_audit_completeness": 1.0,
+  "plurality_coverage": 1.0,
+  "decision_accuracy": 1.0,
+  "audit_chain_intact": true,
+  "audit_problems": [],
+  "curator_tasks": 15,
+  "policy_version": "cfg-406a5400798f",
+  "data": "synthetic"
+}

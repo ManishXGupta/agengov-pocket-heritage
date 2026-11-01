@@ -1,0 +1,62 @@
+{
+  "object_id": "bronze-coin",
+  "passport_version": 2,
+  "synthetic": true,
+  "identity": {
+    "name": "Bronze harbor-toll coin",
+    "category": "coin",
+    "site": "Harbor Town Museum (invented site)"
+  },
+  "provenance": {
+    "acquisition": "Excavated 2019, harbor wall trench B",
+    "chain": ["Excavation report HT-2019-B", "Numismatic study 2021"]
+  },
+  "sources": [
+    {
+      "source_id": "src-excavation-2019",
+      "title": "Excavation report HT-2019-B",
+      "authority": 1.0,
+      "approval": {
+        "status": "approved",
+        "approver_roles": ["curator", "archaeologist"],
+        "reviewed_on": "2026-06-01",
+        "criteria": {"traceable_provenance": true, "scholarly_or_institutional_standing": true, "community_consent": true, "review_date_recorded": true, "conflict_of_interest_checked": true}
+      }
+    },
+    {
+      "source_id": "src-numismatic-2021",
+      "title": "Peer-reviewed numismatic study, 2021",
+      "authority": 0.95,
+      "approval": {
+        "status": "approved",
+        "approver_roles": ["curator", "historian"],
+        "reviewed_on": "2026-06-01",
+        "criteria": {"traceable_provenance": true, "scholarly_or_institutional_standing": true, "community_consent": true, "review_date_recorded": true, "conflict_of_interest_checked": true}
+      }
+    }
+  ],
+  "strands": [
+    {
+      "strand_id": "museum-record",
+      "perspective": "museum record",
+      "attribution": "Harbor Town Museum",
+      "claims": [
+        {"claim_id": "bc-id-1", "topic": "identity", "text": "This is a bronze coin used to pay harbor tolls.", "source_ids": ["src-excavation-2019", "src-numismatic-2021"], "access": "public"},
+        {"claim_id": "bc-hist-1", "topic": "history", "text": "It was excavated in 2019 from a trench beside the old harbor wall.", "source_ids": ["src-excavation-2019"], "access": "public"},
+        {"claim_id": "bc-hist-2", "topic": "history", "text": "Similar coins were struck in the eighteenth century.", "source_ids": ["src-numismatic-2021"], "access": "education"}
+      ]
+    }
+  ],
+  "contested": false,
+  "consensus_strand": null,
+  "sensitivity": {"cultural": "none", "tk_labels": [], "restricted_location": false, "personal_data": false},
+  "curator_approval": {"approved": true, "reviewed_on": "2026-06-01", "approver_role": "curator"},
+  "learning": {
+    "study_card": "Bronze harbor-toll coin: how do we know its date? Compare the excavation context with the numismatic study.",
+    "quiz": [
+      {"q": "What was the coin used for?", "a": "Paying harbor tolls"},
+      {"q": "Where was it found?", "a": "Beside the old harbor wall"},
+      {"q": "Which kind of source dates it?", "a": "A peer-reviewed numismatic study"}
+    ]
+  }
+}

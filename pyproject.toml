@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agengov-pocket-heritage"
+version = "0.1.0"
+description = "Reference implementation of the AGenGov Pocket Heritage governed agentic AI loop for heritage tourism and learning"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Manish Gupta"}]
+requires-python = ">=3.10"
+dependencies = ["jsonschema>=4.18", "PyYAML>=6.0"]
+keywords = ["agentic AI", "cultural heritage", "AI governance", "responsible AI", "EU AI Act", "GDPR"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+pocket-heritage = "pocket_heritage.cli:main"
+
+[project.urls]
+Repository = "https://github.com/ManishXGupta/agengov-pocket-heritage"
+
+[tool.setuptools]
+packages = ["pocket_heritage"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

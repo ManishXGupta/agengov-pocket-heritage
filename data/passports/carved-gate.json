@@ -1,0 +1,37 @@
+{
+  "object_id": "carved-gate",
+  "passport_version": 1,
+  "synthetic": true,
+  "identity": {
+    "name": "Carved wooden gate",
+    "category": "architectural element",
+    "site": "Harbor Town Heritage Quarter (invented site)"
+  },
+  "sources": [
+    {
+      "source_id": "src-blog-post-2025",
+      "title": "Unreviewed travel blog post, 2025",
+      "authority": 0.3,
+      "approval": {
+        "status": "pending",
+        "approver_roles": ["curator"],
+        "reviewed_on": "2026-05-01",
+        "criteria": {"traceable_provenance": false, "scholarly_or_institutional_standing": false, "community_consent": false, "review_date_recorded": true, "conflict_of_interest_checked": false}
+      }
+    }
+  ],
+  "strands": [
+    {
+      "strand_id": "draft",
+      "perspective": "disputed",
+      "attribution": "Unreviewed draft",
+      "claims": [
+        {"claim_id": "cg-id-1", "topic": "identity", "text": "UNAPPROVED-CLAIM: the gate was carved in 1650.", "source_ids": ["src-blog-post-2025"], "access": "public"}
+      ]
+    }
+  ],
+  "contested": false,
+  "consensus_strand": null,
+  "sensitivity": {"cultural": "none", "tk_labels": [], "restricted_location": false, "personal_data": false},
+  "curator_approval": {"approved": false, "reviewed_on": "2026-05-01", "approver_role": "curator"}
+}

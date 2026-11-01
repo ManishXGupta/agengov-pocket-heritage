@@ -1,0 +1,57 @@
+{
+  "object_id": "ritual-chamber",
+  "passport_version": 2,
+  "synthetic": true,
+  "identity": {
+    "name": "Shrine ritual chamber",
+    "category": "sacred space",
+    "site": "Harbor Town Heritage Quarter (invented site)"
+  },
+  "provenance": {
+    "acquisition": "Community-held site; documented with community consent",
+    "chain": ["Community stewardship agreement 2025"]
+  },
+  "sources": [
+    {
+      "source_id": "src-stewardship-agreement-2025",
+      "title": "Community stewardship agreement and site record, 2025",
+      "authority": 1.0,
+      "approval": {
+        "status": "approved",
+        "approver_roles": ["curator", "community knowledge holder"],
+        "reviewed_on": "2026-02-01",
+        "criteria": {
+          "traceable_provenance": true,
+          "scholarly_or_institutional_standing": true,
+          "community_consent": true,
+          "review_date_recorded": true,
+          "conflict_of_interest_checked": true
+        }
+      }
+    }
+  ],
+  "strands": [
+    {
+      "strand_id": "public-record",
+      "perspective": "museum record",
+      "attribution": "Harbor Town Museum with community consent",
+      "claims": [
+        {"claim_id": "rc-id-1", "topic": "identity", "text": "The shrine includes a ritual chamber that remains in community use.", "source_ids": ["src-stewardship-agreement-2025"], "access": "public"},
+        {"claim_id": "rc-loc-1", "topic": "location", "text": "RESTRICTED-LOCATION-DETAIL: the chamber entrance lies behind the north wall of the shrine.", "source_ids": ["src-stewardship-agreement-2025"], "access": "restricted-community"}
+      ]
+    },
+    {
+      "strand_id": "community-practice",
+      "perspective": "community account",
+      "attribution": "Shrine knowledge holders",
+      "restricted_by_community": true,
+      "claims": [
+        {"claim_id": "rc-prac-1", "topic": "practice", "text": "RESTRICTED-PRACTICE-DETAIL: description of the ceremony held in the chamber.", "source_ids": ["src-stewardship-agreement-2025"], "access": "restricted-community"}
+      ]
+    }
+  ],
+  "contested": false,
+  "consensus_strand": null,
+  "sensitivity": {"cultural": "sacred", "tk_labels": ["TK Secret / Sacred (TK SS)", "TK Community Use Only (TK CO)"], "restricted_location": true, "personal_data": false},
+  "curator_approval": {"approved": true, "reviewed_on": "2026-02-01", "approver_role": "curator"}
+}

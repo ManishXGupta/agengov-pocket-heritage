@@ -1,0 +1,49 @@
+{
+  "object_id": "ceremonial-statue",
+  "passport_version": 1,
+  "synthetic": true,
+  "identity": {
+    "name": "Ceremonial statue (gallery 2)",
+    "category": "carved stone statue",
+    "site": "Harbor Town Museum (invented site)"
+  },
+  "provenance": {
+    "acquisition": "Donated 1958; donor file under review",
+    "chain": ["Accession register 1958/114"]
+  },
+  "sources": [
+    {
+      "source_id": "src-accession-1958-114",
+      "title": "Accession register entry 1958/114",
+      "authority": 0.8,
+      "approval": {
+        "status": "approved",
+        "approver_roles": ["curator", "historian"],
+        "reviewed_on": "2023-01-10",
+        "criteria": {
+          "traceable_provenance": true,
+          "scholarly_or_institutional_standing": true,
+          "community_consent": true,
+          "review_date_recorded": true,
+          "conflict_of_interest_checked": true
+        }
+      }
+    }
+  ],
+  "strands": [
+    {
+      "strand_id": "museum-record",
+      "perspective": "museum record",
+      "attribution": "Harbor Town Museum",
+      "claims": [
+        {"claim_id": "cs-id-1", "topic": "identity", "text": "This may be a twelfth-century ceremonial statue.", "source_ids": ["src-accession-1958-114"], "access": "public"},
+        {"claim_id": "cs-prov-1", "topic": "provenance", "text": "The statue was donated to the museum in 1958.", "source_ids": ["src-accession-1958-114"], "access": "public"},
+        {"claim_id": "cs-prov-donor", "topic": "provenance", "text": "PERSONAL-DATA-DETAIL: donor name and home address.", "source_ids": ["src-accession-1958-114"], "access": "internal"}
+      ]
+    }
+  ],
+  "contested": false,
+  "consensus_strand": null,
+  "sensitivity": {"cultural": "medium", "tk_labels": [], "restricted_location": false, "personal_data": true},
+  "curator_approval": {"approved": false, "reviewed_on": "2023-01-10", "approver_role": "curator"}
+}

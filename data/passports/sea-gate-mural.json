@@ -1,0 +1,102 @@
+{
+  "object_id": "sea-gate-mural",
+  "passport_version": 3,
+  "synthetic": true,
+  "identity": {
+    "name": "Sea Gate mural",
+    "category": "painted gate mural",
+    "site": "Harbor Town Heritage Quarter (invented site)",
+    "reference_images": ["img/sea-gate-front.jpg", "img/sea-gate-detail.jpg"]
+  },
+  "provenance": {
+    "acquisition": "In situ; recorded by the municipal heritage survey",
+    "chain": ["Municipal heritage survey record HT-0412", "Conservation report 2025"],
+    "prov_o_uri": "urn:example:prov:ht-0412"
+  },
+  "sources": [
+    {
+      "source_id": "src-museum-catalogue-ht0412",
+      "title": "Harbor Town Museum catalogue entry HT-0412",
+      "authority": 1.0,
+      "approval": {
+        "status": "approved",
+        "approver_roles": ["curator", "historian", "community representative"],
+        "reviewed_on": "2026-03-15",
+        "criteria": {
+          "traceable_provenance": true,
+          "scholarly_or_institutional_standing": true,
+          "community_consent": true,
+          "review_date_recorded": true,
+          "conflict_of_interest_checked": true
+        }
+      }
+    },
+    {
+      "source_id": "src-oral-history-fishers-2024",
+      "title": "Fishing community oral-history recording, 2024",
+      "authority": 0.9,
+      "approval": {
+        "status": "approved",
+        "approver_roles": ["curator", "community representative"],
+        "reviewed_on": "2026-03-15",
+        "criteria": {
+          "traceable_provenance": true,
+          "scholarly_or_institutional_standing": true,
+          "community_consent": true,
+          "review_date_recorded": true,
+          "conflict_of_interest_checked": true
+        }
+      }
+    },
+    {
+      "source_id": "src-old-guidebook-1972",
+      "title": "Harbor Town tourist guidebook, 1972",
+      "authority": 0.4,
+      "approval": {
+        "status": "withdrawn",
+        "approver_roles": ["curator"],
+        "reviewed_on": "2026-03-15",
+        "criteria": {
+          "traceable_provenance": false,
+          "scholarly_or_institutional_standing": false,
+          "community_consent": false,
+          "review_date_recorded": true,
+          "conflict_of_interest_checked": true
+        }
+      }
+    }
+  ],
+  "strands": [
+    {
+      "strand_id": "museum-record",
+      "perspective": "museum record",
+      "attribution": "Harbor Town Museum",
+      "claims": [
+        {"claim_id": "sg-id-1", "topic": "identity", "text": "The Sea Gate mural is a painted harbor gate mural in the Heritage Quarter.", "source_ids": ["src-museum-catalogue-ht0412"], "access": "public"},
+        {"claim_id": "sg-hist-1", "topic": "history", "text": "The museum record dates the mural to the 1890s.", "source_ids": ["src-museum-catalogue-ht0412"], "access": "public"},
+        {"claim_id": "sg-hist-legend", "topic": "history", "text": "The mural was painted by a famous visiting sea captain.", "source_ids": ["src-old-guidebook-1972"], "access": "public"}
+      ]
+    },
+    {
+      "strand_id": "community-account",
+      "perspective": "community account",
+      "attribution": "Harbor Town fishing community",
+      "claims": [
+        {"claim_id": "sg-hist-2", "topic": "history", "text": "The fishing community attributes the mural to an earlier shrine painting renewed by each generation.", "source_ids": ["src-oral-history-fishers-2024"], "access": "public"},
+        {"claim_id": "sg-mean-1", "topic": "meaning", "text": "Fishers greet the gate before the first boat of the season goes out.", "source_ids": ["src-oral-history-fishers-2024"], "access": "public"}
+      ]
+    }
+  ],
+  "contested": true,
+  "consensus_strand": null,
+  "sensitivity": {"cultural": "low", "tk_labels": ["TK Attribution (TK A)"], "restricted_location": false, "personal_data": false},
+  "curator_approval": {"approved": true, "reviewed_on": "2026-03-15", "approver_role": "curator"},
+  "learning": {
+    "study_card": "Sea Gate mural: two documented accounts of its origin. Compare the museum record with the community account and note which sources support each.",
+    "quiz": [
+      {"q": "To which decade does the museum record date the mural?", "a": "The 1890s"},
+      {"q": "Whose account links the mural to an earlier shrine?", "a": "The fishing community"},
+      {"q": "Why are both accounts shown?", "a": "Because the heritage is contested and both are approved"}
+    ]
+  }
+}
