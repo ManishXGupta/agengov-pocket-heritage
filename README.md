@@ -99,6 +99,21 @@ python -m pocket_heritage.cli verify-audit eval/results/audit_log.jsonl
 
 > **Erratum relative to the submitted manuscript.** The submitted manuscript gave S a weight of 0.35, so the trust weights summed to 1.05. The revised paper and this code use S = 0.30, so they sum to 1.0. A unit test enforces this.
 
+## Experiments: what they are about
+
+The experiments answer one question: **does the governed agent answer only when the answer is supported, permitted and safe, and does it record every decision?** We send 25 scripted requests from tourists, students, teachers and curators against five invented passports. Each request is labelled in advance with the correct decision and with any text that must never appear in the reply. The requests fall into six groups, one per governance gap:
+
+| Group | Gap | What it checks |
+|---|---|---|
+| A. Source trust | G1 | Unapproved or withdrawn sources are never used, however confident the photo match is |
+| B. Sensitive information | G2 | Sacred locations, community-restricted practices, personal data, missing consent and unknown roles are withheld or refused |
+| C. Evidence and plurality | G3 | Answers cite sources, respect role-based access, and show every approved account of contested heritage |
+| D. Uncertainty | G4 | Unknown or weakly matched objects get "I am not sure" instead of a guess |
+| E. Human oversight | G5 | Stale, unapproved or sacred-site requests go to a curator |
+| F. Auditing | G6 | Every request leaves one record in an intact, tamper-evident hash chain |
+
+Full design, measures, limits and how to add your own cases: **[docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)**.
+
 ## Synthetic evaluation (Section VI)
 
 `python eval/run_eval.py` runs 25 scripted requests covering G1 to G6, including the six Table V scenarios. Current results ([full report](eval/results/report.md)):
@@ -128,6 +143,7 @@ eval/run_eval.py              G1 to G6 evaluation harness
 eval/results/                 latest metrics, per-case report, and the hash-chained audit log
 tests/                        pytest suite (scoring, passports, audit, agent, eval)
 docs/architecture.md          layers, precedence rules, extension points, platform mapping
+docs/EXPERIMENTS.md           what the experiments test, measures, how to run and extend them
 ```
 
 ## Extending it
